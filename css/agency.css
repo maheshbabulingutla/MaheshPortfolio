@@ -16,6 +16,16 @@ progress[value]::-webkit-progress-value {
 progress[value]{
   background: #fec503;
 }
+
+.googlemap {
+    width: 100%;
+}
+
+iframe{
+  width: 100%;
+}
+
+}
 .btnResume{
     font-size: 13px;
     font-family: "Lato", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;

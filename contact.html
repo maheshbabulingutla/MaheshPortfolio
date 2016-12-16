@@ -1,0 +1,50 @@
+<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">Contact</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 wow fadeInLeft animated" data-wow-duration="0.7s" data-wow-delay="0s" style="visibility: visible; animation-duration: 0.7s; animation-delay: 0s; animation-name: fadeInLeft;">
+						<p>
+							<strong>Contact me</strong>
+						</p>
+							<p><i class="fa fa-phone"></i> (484) 719-7543</li></p>
+							<p><i class="fa fa-mobile-phone"></i> (484) 719-7543</li></p>
+							<p><i class="fa fa-map-marker"></i> 919 Ridge Drive<br> Dekalb, IL 60115</li></p>
+							<p><i class="fa fa-envelope-o"></i> <a href="mailto:lmaheshchowdary@gmail.com">lmaheshchowdary@gmail.com</a></p>
+              <p><i class="fa fa-link"></i> <a href="http://www.lmaheshbabu.com">www.lmaheshbabu.com</a></p>
+					</div>
+
+					<div class="col-sm-6 wow fadeInRight animated" data-wow-duration="0.7s" data-wow-delay="0s" style="visibility: visible; animation-duration: 0.7s; animation-delay: 0s; animation-name: fadeInRight;">
+						<form name="sentMessage" class="form-horizontal bv-form" action="/mail/contact_me.php" method="post" role="form" id="contactForm" novalidate="novalidate">
+							<div class="form-group has-feedback">
+								<div class="col-sm-6">
+									<input type="text" name="name" class="form-control" placeholder="Name" id="name" data-bv-field="name"><i class="form-control-feedback" data-bv-icon-for="name" style="display: none; top: 0px;"></i>
+								<small data-bv-validator="notEmpty" data-bv-validator-for="name" class="help-block" style="display: none;">Name cannot be empty</small><small data-bv-validator="stringLength" data-bv-validator-for="name" class="help-block" style="display: none;">Name must be more than 6 and less than 30 characters long</small><small data-bv-validator="regexp" data-bv-validator-for="name" class="help-block" style="display: none;">Name can only consist alphabetical characters</small></div>
+								<div class="col-sm-6">
+									<input type="text" name="contactEmail" class="form-control" placeholder="Email" id="email" data-bv-field="contactEmail"><i class="form-control-feedback" data-bv-icon-for="contactEmail" style="display: none; top: 0px;"></i>
+								<small data-bv-validator="notEmpty" data-bv-validator-for="contactEmail" class="help-block" style="display: none;">Email cannot be empty</small><small data-bv-validator="emailAddress" data-bv-validator-for="contactEmail" class="help-block" style="display: none;">The input is not a valid email address</small></div>
+							</div>
+							<div class="col-sm-6">
+								<input type="tel" name="Contact" class="form-control" placeholder="Contact No." id="phone" required data-validation-required-message="Please enter your phone number.">
+								<p class="help-block text-danger"></p>
+						</div>
+							<div class="form-group has-feedback">
+								<div class="col-sm-12">
+									<textarea name="message" class="form-control" rows="8" placeholder="Message" data-bv-field="message"></textarea><i class="form-control-feedback" data-bv-icon-for="message" style="display: none; top: 0px;"></i>
+								<small data-bv-validator="notEmpty" data-bv-validator-for="message" class="help-block" style="display: none;">Message cannot be empty</small></div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div id="success"></div>
+									<button type="submit" class="btn btn-theme btn-xl" data-style="expand-left">
+									<span class="ladda-label">Submit</span>
+									</button>
+								</div>
+							</div>
+						<input type="hidden" value=""></form>
+					</div>
+				</div>
+			</div>

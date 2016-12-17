@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://fiddle.jshell.net/_display/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+    <script type="text/javascript" src="./babel.js"></script>
+  
+  
+
+  
+
+  <script type="text/javascript" src="./dummy.js"></script>
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="./result-light.css">
+  
+
+  
+    
+      <script type="text/javascript" src="./progressbar.js"></script>
+    
+  
+
+  <style type="text/css">
+    #container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.skillcontent{
+  padding-left:90px;
+}
+  </style>
+
+  <title></title>
+
+  
+    
+
+<script type="text/babel">
+
+
+
+
+// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+var bar = new ProgressBar.Circle(skillcircle, {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#aaaaaa', width: 2 },
+  to: { color: '#ff984f', width: 5 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value + "%");
+    }
+
+  }
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '1.6rem';
+
+bar.animate(1.0);  // Number from 0.0 to 1.0
+
+
+</script>
+
+  
+</head>
+
+<body>
+  <link href="./css(1)" rel="stylesheet" type="text/css">
+
+<div class="row">
+<div class="col-md-4">
+<div id="container">
+</div>
+<p class="skillcontent">HTML, CSS <br>&amp; Bootstrap</p>
+</div>
+</div>
+  
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+
+
+
+
+</body></html>

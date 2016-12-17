@@ -5,6 +5,21 @@ body {
   font-weight: 300;
 }
 
+.btnResume{
+    font-size: 18px;
+    font-family: "Lato", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    background: #000000;
+    padding: 9px 14px;
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+.btnResume:hover{
+  text-decoration-color: :#000000;
+  border-color: #000000;
+}
+
 progress[value]::-moz-progress-bar {
   background: #fec503;
 }
@@ -23,21 +38,6 @@ progress[value]{
 
 iframe{
   width: 100%;
-}
-
-}
-.btnResume{
-    font-size: 13px;
-    font-family: "Lato", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    background: #000000;
-    padding: 16px 22px;
-    display: inline-block;
-    text-decoration: none !important;
-}
-
-.btnResume:hover{
-  border-color: #f6bf01;
 }
 
 .glyphicon-triangle-bottom:hover{
